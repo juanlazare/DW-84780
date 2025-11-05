@@ -1,60 +1,131 @@
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0rem;
+  padding: 0rem;
 }
 
-.header {
-  background-color: aqua;
+.header__contact {
+  background-color: #f4f4f4;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
 }
-.header_info {
-  margin: 3px;
+.header__contact-item {
+  margin: 0 15px;
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
   background-color: red;
-  border: 2px solid;
+  border: 1px solid;
   border-color: black;
+}
+.header__nav-logo-link {
+  display: inline-block;
+}
+.header__nav__logo {
+  max-height: 60px;
+}
+.header__nav-menu {
+  display: flex;
+  gap: 20px;
 }
 
 .main {
-  background-image: url(../assets/accesorios.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  padding: 20px;
+}
+
+.footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .header__nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header__nav-menu {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .header__nav-menu__link {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+}
+/* *{
+    margin: 0px;
+    padding: 0px;
+}
+
+.header{
+    background-color: aqua;
+
+    &_info{
+        margin: 3px;
+        background-color: red;
+        border: 2px solid;
+        border-color: black;
+    }
+}
+
+
+.main {
+    background-image: url(../assets/accesorios.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
   display: grid;
   grid-template-columns: 250px 1fr 1fr;
-  grid-template-areas: "contenido_1 contenido_1 contenido_1" "contenido_2 contenido_2 contenido_2" "contenido_2 contenido_2 contenido_2";
+  grid-template-areas:
+    "contenido_1 contenido_1 contenido_1"
+    "contenido_2 contenido_2 contenido_2"
+    "contenido_2 contenido_2 contenido_2";
   gap: 1rem;
   max-width: var(--max-width);
   margin: 2rem auto;
   padding: 0 1rem;
-}
-.main_contenido_1 {
+
+  &_contenido_1 {
   grid-area: contenido_1;
   background-color: #a90a0a;
   border-radius: 6px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   padding: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
-.main_marca {
-  font-size: 2rem;
-  font-weight: 600;
+
+    &_marca {
+    font-size: 2rem;
+font-weight: 600;
   color: var(--color-primary);
 }
-.main_contenido_2 {
+
+    &_contenido_2{
   grid-area: contenido_2;
   background-color: #fff;
   border-radius: 6px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   padding: 2rem;
-}
-.main_contenido_2 .contenedor_de_producto {
+
+ .contenedor_de_producto{
   display: flex;
   justify-content: space-between;
   gap: 1rem;
-}
-.main_contenido_2 .contenedor_de_producto .contenedor_producto {
+
+  .contenedor_producto {
   flex: 1;
   background-color: var(--color-accent);
   color: var(--color-primary);
@@ -64,16 +135,24 @@
   font-weight: 600;
   transition: transform 0.3s ease, background 0.3s ease;
 }
-.main .contenedor_producto:hover {
+}
+}
+
+.contenedor_producto:hover {
   background-color: var(--color-secondary);
   color: #fff;
   transform: translateY(-4px);
 }
 
+
+
+
+}
+ */
 /* ==========================
    FOOTER
 ========================== */
-.footer {
+/* .footer {
   background-color: var(--color-primary);
   color: #fff;
   padding: 1rem 0;
@@ -93,39 +172,47 @@
   flex: 1;
   text-align: center;
   font-size: 0.9rem;
-}
-
+} */
 /* ==========================
    RESPONSIVE
 ========================== */
 /* Tablet */
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
   .main {
     grid-template-columns: 200px 1fr;
-    grid-template-areas: "sidebar content1" "sidebar content2";
+    grid-template-areas:
+      "sidebar content1"
+      "sidebar content2";
   }
+
   .content__flex {
     flex-direction: column;
   }
-}
+} */
 /* Mobile */
-@media (max-width: 576px) {
+/* @media (max-width: 576px) {
   .header__container,
   .footer__container {
     flex-direction: column;
   }
+
   .main {
     grid-template-columns: 1fr;
-    grid-template-areas: "content1" "content2" "sidebar";
+    grid-template-areas:
+      "content1"
+      "content2"
+      "sidebar";
   }
+
   .sidebar {
     flex-direction: row;
     overflow-x: auto;
   }
+
   .sidebar__item {
     flex: 1;
     min-width: 100px;
   }
-}
+} */
 
 /*# sourceMappingURL=style.css.map */
