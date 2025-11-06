@@ -75,6 +75,170 @@ button {
   transform: scale(1.1);
 }
 
+.main {
+  padding: 2rem;
+}
+.main__brands {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.main__brand {
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.main__brand:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.main__brand-name {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.main__brand-desc {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+.main__brand-link {
+  background-color: #c1121f;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  display: inline-block;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+.main__brand-link:hover {
+  background-color: #023047;
+}
+.main {
+  /* --- Carrusel (index.html) --- */
+  /*   &__carousel {
+      margin-bottom: 3rem;
+      border-radius: 10px;
+      overflow: hidden;
+    } */
+}
+.main__contact {
+  display: flex;
+}
+.main__contact-form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.main__contact-form input {
+  padding: 0.6rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 250px;
+}
+.main__contact-form button {
+  background-color: #c1121f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.6rem 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+.main__contact-form button:hover {
+  background-color: #023047;
+}
+.main {
+  /* --- Modelos (Yamaha, Honda, Royal) --- */
+}
+.main__models-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #c1121f;
+}
+.main__models-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+.main .main__model {
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.main .main__model:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+.main .main__model-img {
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+.main .main__model-name {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.main .main__model-desc {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  color: rgb(0.602739726, 14.4657534247, 21.397260274);
+}
+.main .main__model-price {
+  font-weight: 700;
+  color: #c1121f;
+  margin-bottom: 1rem;
+}
+.main .main__model-btn {
+  background-color: #c1121f;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+.main .main__model-btn:hover {
+  background-color: #023047;
+}
+.main {
+  /* --- Nosotros --- */
+}
+.main__about {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 10px;
+  padding: 2rem;
+  border: 1px solid #e0e0e0;
+}
+.main__about-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #c1121f;
+  margin-bottom: 1rem;
+}
+.main__about-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+  text-align: justify;
+}
+.main__about-subtitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  color: #023047;
+}
+
 .footer {
   background-color: #023047;
   color: white;
